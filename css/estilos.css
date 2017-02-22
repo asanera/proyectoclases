@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face { 
+    font-family: 'fuente';
+    src: url('fuentes/Cabin-Italic.ttf');
+}
+body{
+    text-align: center;
+    background-image: url("../Imagenes/textura.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* La imagen de fondo se reescala cuando se cambia el ancho de ventana
+     del navegador */
+   background-size: cover;
+  
+}
+
+#cabecera{
+    float: left;
+    width: 300px;
+    height: 110px;
+    margin: 15px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+  
+}
+#cabecera hgroup{
+    width: 250px;
+    float: right;
+        
+}
+#cabecera h1{
+    font: 35px  family;
+    color: #FF4000;
+    text-shadow: rgba(0,0,0, 0.5)2px 2px 5px;
+}
+#cabecera h2{
+    font-size: 30px;
+    color: #FF4000;
+   
+}
+#cabecera img{
+    float: left;
+    width: 50px;
+    height: 91px; 
+}
+nav{
+    box-sizing: border-box;
+    width: 400px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 45px;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #A4A4A4;
+    border-bottom: 1px solid #A4A4A4;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 10px;
+    
+}
+nav a{
+    color: #FF4000;
+}
+nav li:hover{
+    text-shadow: rgba(0,0,0, 0.5)2px 2px 5px;
+    transform: scale(1.5);
+}
+nav a:hover{
+     color: #B43104;
+}
+#noticias{
+   
+   float: left;
+   width: 1000px;
+   margin-top: 60px;
+   text-align: left;
+}
+article{
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.75);
+    float:left;
+    width: 45%;
+    padding: 10px;
+    min-height: 800px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 2px;
+    
+    box-shadow: rgb(150,150,150) 5px 5px 10px;
+}
+
+.titular{
+    box-sizing: border-box;
+    width: 450px; 
+}
+hgroup{
+    margin-bottom: 10px;
+}
+.imgNoticia{
+    float: left;
+    padding-right: 5px;
+        
+}
+.imgNoticia img{
+    width: 350px;  
+}
+
+aside{
+    
+    box-sizing: border-box;
+    width: 200px;
+    min-height: 800px;
+    padding: 10px;
+    float: right;
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 5px;
+    margin-top: 60px;
+    border: 1px solid;
+    border-radius: 2px;
+    color: white;
+    
+    
+}
+aside p{
+    font: 20px fuente, sans-serif;
+}
+aside ul{
+    margin-top: 20px;
+    text-align: left;
+}
+aside li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside li a {
+    color: orange;
+}
+aside li a:hover{
+    color: #F3E2A9;
+}
+.comentarios {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font: 20px fuente;
+    color: #2E9AFE;
+}
+.comentarios:hover {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+    transform: scale(1.2);
+    color: #2E9AFE;
+}
+#pie{
+     box-sizing: border-box;
+     clear: both;
+}
+#pie span{
+    font: 15px fuente;
+    color: white;
+}
