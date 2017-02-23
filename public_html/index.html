@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Queremos realizar un documento web con la siguiente estructura: Encabezado con un 
+título y un subtítulo, así como una imagen tipo logo. Barra de navegación. 
+Una sección principal, que contendrá al menos dos articulos. Ambos artículos contendrán: 
+un encabezado de artículo, con un título y un subtítulo, un texto y una imagen, 
+así como un pié de artículo. Una barra lateral con accesos. Un pié de página con 
+la información corporativa. Deberás realizar primero el documento HTML perfectamente 
+distribuido y luego el documento CSS con los estilos necesarios para ver correctamente la página. 
+Esta deberá verse con la sección a la izquierda, la barra lateral a la derecha, 
+y los artículos en dos columnas paralelas. El pie de página al fondo del todo.
+-->
+<html>
+    <head>
+        <title>Ejercicio2 Documento web</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="contenido">
+            <header id="cabecera">
+                <hgroup id="tituloweb">
+                    <h1>Noticias web</h1>
+                    <h2>Todas las noticias sobre informática</h2>
+                </hgroup>
+                <figure id="logo">
+                    <img src="Imagenes/Logoweb.png" alt="logo"/>
+                </figure>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <section id="noticias">
+                <article>
+                    <header class="titular">
+                        <hgroup>
+                            <h2>Todo en unos auriculares</h2>
+                            <h3>Ya no necesitas movil, todo esta en tus auriculares</h3>
+                        </hgroup>
+                        <time datetime="2017-02-07">Publicado el 07/02/2017</time>
+                        <figure class="imgNoticia">
+                            <img src="Imagenes/auricularInteligente.jpg" alt="Auricular"/>
+                            <figcaption>Auricular que  hará las funciones de tu móvil</figcaption>
+                        </figure>
+                    </header>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                    </p>
+                   
+
+                    <footer class="comentarios">
+                        <p>Comentarios (0)</p>
+                    </footer>
+                </article>
+
+                <article>
+                      <header class="titular">
+                        <hgroup>
+                            <h2>Whatssapp contratará a programadores</h2>
+                            <h3>Tras darse cuenta que ha triunfado las videollamadas necesitan programadores</h3>
+                        </hgroup>
+                        <time datetime="2017-02-07">Publicado el 07/02/2017</time>
+                        <figure class="imgNoticia">
+                            <img src="Imagenes/whatsapp-office.jpg" alt=""/>
+                            <figcaption>Auricular que se hará las funciones de tu móvil</figcaption>
+                        </figure>
+                    </header>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                    </p>
+                    
+                    <footer class="comentarios">
+                        <p>Comentarios (0)</p>
+                        
+                    </footer>
+                </article>
+            </section>
+            <aside>
+                <p>Aticulos Anteriores</p>
+                <ul>
+                    <li><a href="#">Facebook cae empicado</a></li>
+                    <li><a href="#">Los servidores del FBI salen ardiendo</a></li>
+                    <li><a href="#">Java es de pago</a></li>
+                    <li><a href="#">Apple quiebra</a></li>
+                </ul>
+            </aside>
+            <footer id="pie">
+                <span class="copyright">
+                    &copy; Copyright Alvaro Sanchez
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>
